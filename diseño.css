@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Neucha';
+}
+html{
+	scroll-behavior: smooth;
+}
+
+section{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#inicio{
+	background-color: #ffafcc;
+}
+#parte1{
+	background-color: #ffc8dd;
+}
+#parte2{
+	background-color: #bde0fe;
+}
+#parte3{
+	background-color: #a2d2ff;
+}
+#parte4{
+	background-color: #ffd6ff;
+}
+#parte5{
+	background-color: #e7c6ff;
+}
+#parte6{
+	background-color: #c8b6ff;
+}
+#parte7{
+	background-color: #b8c0ff;
+}
+#parte8{
+	background-color: #ffc8dd;
+}
+#parte9{
+	background-color: #bde0fe;
+}
+#parte10{
+	background-color: #a2d2ff;
+}
+#parte11{
+	background-color: #ffd6ff;
+}
+#inicio h1{
+	font-size: 68px;
+	letter-spacing: 5px;
+}
+section h2{
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+section img{
+	margin-top: 30px;
+	max-width: 300px;
+}
+.tiempos{
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+}
+.tiempos .barra-tiempos{
+	width: 900px;
+	position: absolute;
+	top: 30px;
+	height: 2px;
+	background-color: #b899ca;
+	z-index: -2;
+
+}
+.tim{
+	display: inline-block;
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #cdb4db;
+	text-decoration: none;
+	color: white;
+	margin: 0 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	scale: 1;
+	transition: background-color, transform .5s linear;
+
+}
+.seleccionado{
+	transform: scale(1.2) ;
+	background-color: #EA5455;
+	color: #000;
+	font-weight: bold;
+}
