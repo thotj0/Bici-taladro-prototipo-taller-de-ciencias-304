@@ -1,3 +1,28 @@
+// Obtener el modal
+var modal = document.getElementById("recommendModal");
+
+// Obtener el elemento <span> que cierra el modal
+var span = document.getElementsByClassName("close")[0];
+
+// Mostrar el modal al cargar la página
+window.onload = function() {
+    modal.style.display = "block";
+}
+
+// Cuando el usuario hace clic en <span> (x), se cierra el modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Cuando el usuario hace clic fuera del modal, se cierra
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
 // Cuando el usuario hace scroll ejecuto myFuncion
 window.onscroll = function() {myFunction()};
 

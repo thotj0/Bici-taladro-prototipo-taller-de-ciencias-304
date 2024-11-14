@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neucha', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base para medidas relativas */
+}
+
+
+/* El modal (oculto por defecto) */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo (permanece en la pantalla) */
+    z-index: 1; /* Por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Permitir desplazamiento si es necesario */
+    background-color: rgb(0,0,0); /* Fondo negro con opacidad */
+    background-color: rgba(0,0,0,0.4); /* Fondo con opacidad */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrado vertical y horizontal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Puede ajustar el ancho */
+}
+
+/* Botón de cierre (x) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding para mejor separación en pantallas pequeñas */
+}
+
+/* Colores de fondo para las secciones */
+#inicio{
+	background-color: #ffafcc;
+}
+#parte1{
+	background-color: #ffc8dd;
+}
+#parte2{
+	background-color: #bde0fe;
+}
+#parte3{
+	background-color: #a2d2ff;
+}
+#parte4{
+	background-color: #ffd6ff;
+}
+#parte5{
+	background-color: #e7c6ff;
+}
+#parte6{
+	background-color: #c8b6ff;
+}
+#parte7{
+	background-color: #b8c0ff;
+}
+#parte8{
+	background-color: #ffc8dd;
+}
+#parte9{
+	background-color: #bde0fe;
+}
+
+#materi {
+    background-color: #b8c0ff;
+}
+
+/* Ajuste de tamaños de texto */
+#inicio h1 {
+    font-size: 4.25rem; /* Ajustado a rem */
+    letter-spacing: 0.3125rem; /* Ajustado a rem */
+}
+
+section h2 {
+    font-size: 3.125rem; /* Ajustado a rem */
+    letter-spacing: 0.3125rem; /* Ajustado a rem */
+    text-align: center;
+}
+
+section img {
+    margin-top: 1.875rem; /* Ajustado a rem */
+    max-width: 100%; /* Responsivo */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Estilos para la barra de tiempo */
+.tiempos {
+    position: fixed;
+    top: 1.25rem; /* Ajustado a rem */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 75rem; /* Ajustado a rem */
+    display: flex;
+    justify-content: center;
+}
+
+.tiempos .barra-tiempos {
+    width: 100%;
+    position: absolute;
+    top: 1.875rem; /* Ajustado a rem */
+    height: 0.125rem; /* Ajustado a rem */
+    background-color: #b899ca;
+    z-index: -2;
+}
+
+/* Estilos para los tiempos */
+.tim {
+    display: inline-block;
+    font-size: 1.25rem; /* Ajustado a rem */
+    width: 3.75rem; /* Ajustado a rem */
+    height: 3.75rem; /* Ajustado a rem */
+    border-radius: 50%;
+    background-color: #cdb4db;
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem; /* Ajustado a rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: background-color, transform 0.5s linear;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 768px) {
+    .tim {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 480px) {
+    .tiempos {
+        top: 0.625rem; /* Ajustado a rem */
+    }
+    .tim {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.875rem;
+        margin: 0 0.25rem;
+    }
+}
+
+/* Estilos para el estado seleccionado */
+.seleccionado {
+    transform: scale(1.2);
+    background-color: #EA5455;
+    color: #000;
+    font-weight: bold;
+}
+
+.PDF {
+    margin: auto;
+    display: block;
+    width: 850px;
+    height: 100vh;
+    border-radius: 20px;
+    box-shadow: #b899ca;
+}
+
